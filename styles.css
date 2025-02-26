@@ -57,7 +57,21 @@
     color: var(--red-color);
   }
 
+  .navbar-brand img {
+    width: 90px;
+  }
+
   .active {
     font-weight: bold;
   }
 
+  .fa-brands {
+    font-size: 1.7rem;
+    color: var(--green-color);
+    transition: all .3s ease-in-out;
+  }
+
+  .fa-brands:hover {
+    transform: scale(1.05);
+    opacity: .9;
+  }
