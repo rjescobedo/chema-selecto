@@ -16,5 +16,8 @@
     "url": "https://github.com/rjescobedo/chema-selecto/issues"
   },
   "homepage": "https://github.com/rjescobedo/chema-selecto#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
 }

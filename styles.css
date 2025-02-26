@@ -1,0 +1,63 @@
+/* Root Colors & Sizes */
+
+:root {
+    /* Primary Colors */
+    --red-color: #db152f; /* Adjust based on your design */
+    --green-color: #2c4d27;
+  
+    /* Neutral Colors */
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+  
+    /* Font Settings */
+    --font-primary: 'Arial', sans-serif;
+    --font-secondary: 'Georgia', serif;
+  
+    /* Font Sizes */
+    --font-xs: 12px;
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 20px;
+    --font-xl: 24px;
+    --font-xxl: 32px;
+  
+    /* Responsive Font Sizes */
+    --font-responsive-sm: clamp(14px, 2vw, 16px);
+    --font-responsive-md: clamp(16px, 3vw, 20px);
+    --font-responsive-lg: clamp(20px, 4vw, 24px);
+    --font-responsive-xl: clamp(24px, 5vw, 32px);
+  
+    /* Spacing */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+  
+    /* Border Radius */
+    --border-radius: 8px;
+  
+    /* Shadows */
+    --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  /* Header/Navigation */
+  .navbar-toggler {
+    border: none !important; /* Remove the outline */
+    box-shadow: none !important; /* Ensure no focus outline */
+  }
+
+  .nav-link:hover {
+    color: var(--red-color);
+  }
+
+  .active {
+    font-weight: bold;
+  }
+
