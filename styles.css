@@ -3,7 +3,7 @@
 :root {
     /* Primary Colors */
     --red-color: #db152f; /* Adjust based on your design */
-    --green-color: #2c4d27;
+    --green-color: #3d7b34;
   
     /* Neutral Colors */
     --light-color: #f8f9fa;
@@ -12,14 +12,6 @@
     /* Font Settings */
     --font-primary: 'Arial', sans-serif;
     --font-secondary: 'Georgia', serif;
-  
-    /* Font Sizes */
-    --font-xs: 12px;
-    --font-sm: 14px;
-    --font-md: 16px;
-    --font-lg: 20px;
-    --font-xl: 24px;
-    --font-xxl: 32px;
   
     /* Responsive Font Sizes */
     --font-responsive-sm: clamp(14px, 2vw, 16px);
@@ -80,30 +72,40 @@
 .footer {
     background-color: var(--red-color);
     color: var(--light-color);
-    padding: 1rem;
 }
 
-.footer-quicklinks-container {
-    margin-top: .5rem;
+.footer-quicklinks-container h5 {
+  font-size: var(--font-responsive-md);
 }
 
-.footer-list {
-    margin: 0;
+.footer-contact-container h5 {
+  font-size: var(--font-responsive-md);
 }
 
-.footer-item {
-    margin-bottom: 1rem;
+.footer-contact-item a {
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: var(--font-responsive-sm);
+}
+
+.footer-contact-item span:hover {
+  text-decoration: underline;
 }
 
 .footer-link {
     color: var(--light-color);
-    font-size: var(--font-responsive-md);
+    font-size: var(--font-responsive-sm);
     text-decoration: none;
     transition: all .3s ease-in-out;
 }
 
 .footer-link:hover {
     color: var(--green-color);
+    font-weight: bold;
+}
+
+.footer-socials-container h5 {
+  font-size: var(--font-responsive-md);
 }
 
 .footer-social-link i {
@@ -122,12 +124,11 @@
 }
 
 .footer-brand img {
-    width: 150px;
+    width: 200px;
 }
 
 .footer-copyright {
     text-align: center;
-    padding-top: 2rem;
 }
 
 .footer-copyright p {
@@ -143,4 +144,8 @@
 
 .footer-copyright a:hover {
     text-decoration: underline;
+}
+
+.footer-line {
+  border-top: 1px solid var(--light-color);
 }
