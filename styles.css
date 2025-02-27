@@ -65,13 +65,79 @@
     font-weight: bold;
   }
 
-  .fa-brands {
+  .social-link i {
     font-size: 1.7rem;
     color: var(--green-color);
     transition: all .3s ease-in-out;
   }
 
-  .fa-brands:hover {
+  .social-link i:hover {
     transform: scale(1.05);
     opacity: .9;
   }
+
+  /* Footer */
+.footer {
+    background-color: var(--red-color);
+    color: var(--light-color);
+    padding: 1rem;
+}
+
+.footer-quicklinks-container {
+    margin-top: .5rem;
+}
+
+.footer-list {
+    margin: 0;
+}
+
+.footer-item {
+    margin-bottom: 1rem;
+}
+
+.footer-link {
+    color: var(--light-color);
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: var(--green-color);
+}
+
+.footer-social-link i {
+    font-size: 1.7rem;
+    transition: all .3s ease-in-out;
+    color: var(--light-color);
+}
+
+.footer-social-link i:hover {
+    transform: scale(1.05);
+    color: var(--green-color);
+}
+
+.footer-brand {
+    text-align: center;
+}
+
+.footer-brand img {
+    width: 150px;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+.footer-copyright a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    text-decoration: underline;
+}
