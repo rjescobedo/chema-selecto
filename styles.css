@@ -97,8 +97,9 @@
 
 .footer-link {
     color: var(--light-color);
+    font-size: var(--font-responsive-md);
     text-decoration: none;
-    transition: color .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .footer-link:hover {
@@ -131,11 +132,13 @@
 
 .footer-copyright p {
     margin: 0;
+    font-size: var(--font-responsive-sm);
 }
 
 .footer-copyright a {
     color: var(--light-color);
     text-decoration: none;
+    font-size: var(--font-responsive-sm);
 }
 
 .footer-copyright a:hover {
