@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Favicon Icons -->
+     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+     <link rel="manifest" href="/site.webmanifest">
     <title>Contact Us | Chema Selecto</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -83,19 +88,19 @@
                 <h2 class="text-center mb-4">Contact Information</h2>
                     <ul class="contact-list list-unstyled d-flex flex-column align-items-center">
                         <li class="contact-item mb-3">
-                            <a href="https://www.google.com/maps?q=7220+Ave+F+Houston,+TX+77011" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
+                            <a href="https://www.google.com/maps?q=7220+Ave+F+Houston,+TX+77011" target="_blank" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                                 <i class="fa-solid fa-location-dot fa-lg me-2"></i>
                                 <span>7220 Ave F, Houston, TX 77011</span>
                             </a>
                         </li>
                         <li class="contact-item mb-3">
-                            <a href="tel:+17139282294" class="d-flex align-items-center text-decoration-none text-dark">
+                            <a href="tel:+17139282294" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                                 <i class="fa-solid fa-phone fa-lg me-2"></i>
                                 <span>(713) 928-2294</span>
                             </a>
                         </li>
                         <li class="contact-item mb-3">
-                            <a href="mailto:chemaselecto@gmail.com" class="d-flex align-items-center text-decoration-none text-dark">
+                            <a href="mailto:chemaselecto@gmail.com" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
                                 <i class="fa-solid fa-envelope fa-lg me-2"></i>
                                 <span>chemaselecto@gmail.com</span>
                             </a>
@@ -163,7 +168,7 @@
         <section class="faq-container col-12 mb-5">
             <div class="faq-text m-auto">
                 <h2 class="text-center mb-4">Helpful FAQ's</h2>
-                <p class="text-center">Find answers to common questions about our services, ordering process, and support. If you need more assistance, feel free to <a href="#contact-form" class="text-success">contact us</a>.</p>
+                <p class="text-center">Find answers to common questions about our services, ordering process, and support. If you need more assistance, feel free to <a href="#contact-form" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">contact us</a>.</p>
             </div>
         
             <div class="accordion shadow" id="faq-accordion">
@@ -188,7 +193,7 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
                         <div class="accordion-body">
-                            Yes! We specialize in custom manufacturing. If you have specific requirements, please fill out our <a class="text-light" href="#contact-form">contact form</a> or call us at <strong>(713) 928-2294</strong> to discuss your needs.
+                            Yes! We specialize in custom manufacturing. If you have specific requirements, please fill out our <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#contact-form">contact form</a> or call us at <strong>(713) 928-2294</strong> to discuss your needs.
                         </div>
                     </div>
                 </div>
@@ -277,19 +282,19 @@
                 <h5>Contact</h5>
                 <ul class="footer-contact-list list-unstyled">
                     <li class="footer-contact-item mb-1">
-                        <a href="https://www.google.com/maps?q=7220+Ave+F+Houston,+TX+77011" target="_blank" rel="noopener noreferrer">
+                        <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://www.google.com/maps?q=7220+Ave+F+Houston,+TX+77011" target="_blank" rel="noopener noreferrer">
                             <i class="fa-solid fa-location-dot"></i>
                             <span>7220 Ave F, Houston, TX 77011</span>
                         </a>
                     </li>
                     <li class="footer-contact-item mb-1">
-                        <a href="tel:+17139282294">
+                        <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="tel:+17139282294">
                             <i class="fa-solid fa-phone"></i>
                             <span>(713) 928-2294</span>
                         </a>
                     </li>
                     <li class="footer-contact-item">
-                        <a href="mailto:chemaselecto@gmail.com">
+                        <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="mailto:chemaselecto@gmail.com">
                             <i class="fa-solid fa-envelope"></i>
                             <span>chemaselecto@gmail.com</span>
                         </a>
@@ -319,13 +324,158 @@
                 </ul>
             </div>
         </div>
+        <!-- Terms & Conditions | Privacy Policy -->
+        <div class="col-12">
+            <p><a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#" data-bs-toggle="modal" data-bs-target="#terms-modal">Terms & Conditions</a> | <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#" data-bs-toggle="modal" data-bs-target="#privacy-modal">Privacy Policy</a></p>
+        </div>
+        <!-- Terms & Conditions Modal -->
+        <div class="modal fade" id="terms-modal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="termsModalLabel">Terms & Conditions</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ol class="modal-list">
+                            <li class="modal-list-item"><strong>General Terms</strong>
+                                <ol type="a">
+                                    <li>Chema Selecto provides manufacturing services and related products. All services are subject to availability and our approval.</li>
+                                    <li>We reserve the right to modify, suspend, or discontinue any part of our services at any time.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Us of Our Website</strong>
+                                <ol type="a">
+                                    <li>You may use our website for lawful purposes only. You agree not to engage in any activity that may disrupt or interfere with our website’s operation.</li>
+                                    <li>Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Orders and Payments</strong>
+                                <ol type="a">
+                                    <li>All orders are subject to acceptance and availability.</li>
+                                    <li>Prices for our products and services are subject to change without prior notice.</li>
+                                    <li>Payment must be made in full before the processing of any orders, unless otherwise agreed.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Intellectual Property</strong>
+                                <ol type="a">
+                                    <li>All content, trademarks, logos, and designs displayed on this website are the property of Chema Selecto and are protected by intellectual property laws.</li>
+                                    <li>You may not reproduce, distribute, or use any content from this website without our prior written consent.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Limitation of Liability</strong>
+                                <ol type="a">
+                                    <li>Chema Selecto is not liable for any indirect, incidental, or consequential damages resulting from the use of our website or services.</li>
+                                    <li>We do not guarantee that our website will be error-free, secure, or continuously available.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Privacy Policy</strong>
+                                <ol type="a">
+                                    <li>Your use of our website is also governed by our Privacy Policy, which outlines how we collect, use, and protect your information.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Third-Party Links</strong>
+                                <ol type="a">
+                                    <li>a. Our website may contain links to third-party websites. We are not responsible for the content, security, or privacy practices of these external sites.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Governing Law</strong>
+                                <ol type="a">
+                                    <li>These Terms and Conditions are governed by and construed in accordance with the laws of Harris County.</li>
+                                    <li>Any disputes arising from these terms will be subject to the exclusive jurisdiction of the courts in Harris County.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Changes to These Terms</strong>
+                                <ol type="a">
+                                    <li>We reserve the right to update or modify these Terms and Conditions at any time. Any changes will be effective immediately upon posting on this page.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Contact Us</strong>
+                                <ol type="a">
+                                    <li>If you have any questions about these Terms and Conditions, please contact us at <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="mailto:chemaselecto@gmail.com">chemaselecto@gmail.com</a>.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Privacy Policy Modal -->
+        <div class="modal fade" id="privacy-modal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="privacyModalLabel">Privacy Policy</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ol class="modal-list">
+                            <li class="modal-list-item"><strong>Information We Collect</strong>
+                                <ol type="a">
+                                    <li>We collect personal information such as your name, email address, phone number, and company details when you contact us, request a quote, or use our services.</li>
+                                    <li>We may also collect non-personal information, such as IP addresses and browsing behavior, to improve our website and services.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>How We Use Your Information</strong>
+                                <ol type="a">
+                                    <li>To provide and improve our products and services.</li>
+                                    <li>To process orders and respond to inquiries.</li>
+                                    <li>To enhance website functionality and user experience.</li>
+                                    <li>To comply with legal obligations and enforce our policies.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Sharing Your Information</strong>
+                                <ol type="a">
+                                    <li>We do not sell or rent your personal information.</li>
+                                    <li>We may share your information with service providers who assist in our business operations, provided they maintain confidentiality.</li>
+                                    <li>We may disclose information if required by law or to protect our rights and safety.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Cookies and Tracking Technologies</strong>
+                                <ol type="a">
+                                    <li>We use cookies and similar technologies to enhance your browsing experience and analyze website traffic.</li>
+                                    <li>You can modify your browser settings to refuse cookies, but some features of our website may not function properly.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Data Security</strong>
+                                <ol type="a">
+                                    <li>We implement security measures to protect your personal information but cannot guarantee absolute security due to the nature of the internet.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Third-Party Links</strong>
+                                <ol type="a">
+                                    <li>Our website may contain links to third-party websites. We are not responsible for their privacy practices or content.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Changes to This Policy</strong>
+                                <ol type="a">
+                                    <li>We reserve the right to update or modify this Privacy Policy at any time. Changes will be posted on this page.</li>
+                                </ol>
+                            </li>
+                            <li class="modal-list-item"><strong>Contact Us</strong>
+                                <ol type="a">
+                                    <li>If you have any questions regarding this Privacy Policy, please contact us at <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="mailto:chemaselecto@gmail.com">chemaselecto@gmail.com</a>.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Copyright -->
         <div class="row footer-line">
-            <div class="col-12 mt-1">
+            <div class="col-12 mt-3">
                 <div class="footer-copyright">
                     <p class="mb-1">&copy; <span id="year"></span> Chema Selecto. All rights reserved.</p>
-                    <p>Designed & Optimized by <a href="https://raulwebstudio.com">Raul's Web Studio</a></p>
+                    <p>Designed & Optimized by <a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="https://raulwebstudio.com">Raul's Web Studio</a></p>
                 </div>
             </div>
         </div>
