@@ -104,11 +104,22 @@
 }
 
 .carousel-caption h5 {
-  font-size: var(--font-responsive-xxl);
+  font-size: var(--font-responsive-xl);
 }
 
 .carousel-caption p {
-  font-size: var(--font-responsive-md);
+  font-size: var(--font-responsive-sm);
+}
+
+@media (min-width: 768px) {
+  .carousel-caption h5 {
+    font-size: var(--font-responsive-xxxl);
+  }
+  
+  .carousel-caption p {
+    font-size: var(--font-responsive-md);
+  }
+  
 }
 
 /* Welcome Section */
@@ -216,9 +227,12 @@
   font-size: var(--font-responsive-lg);
 }
 
-.review-card p,
-.review-card small {
+.review-card p {
   font-size: var(--font-responsive-sm);
+}
+
+.review-card small {
+  font-size: var(--font-responsive-xs);
 }
 
 .stars {
