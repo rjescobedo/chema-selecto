@@ -124,24 +124,22 @@
 
 /* Photo Section */
 .box {
-  margin: auto;
-  width: 300px;
-  height: 400px;
+  margin: 0 auto;
+  width: 200px;
+  height: 300px;
   background-color: var(--green-color);
   position: relative; /* Enables absolute positioning for children */
   box-shadow: var(--box-shadow);
 }
 
-/* Positioning each image */
 .box img {
   position: absolute;
-  width: 200px; /* Adjust as needed */
-  height: 200px; /* Adjust as needed */
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
   object-fit: cover;
   box-shadow: var(--box-shadow);
 }
 
-/* Custom positions for each image */
 .img1 {
   top: -20px;
   left: -50px;
@@ -157,7 +155,21 @@
   left: -40px;
 }
 
-/* Reviews Section */
+@media (min-width: 768px){
+  .box {
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .box img {
+    width: 200px;
+    height: 200px;
+  }
+
+}
+
+
 /* Reviews Section */
 .reviews-section {
   position: relative;
