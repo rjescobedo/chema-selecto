@@ -42,6 +42,7 @@
   body {
     margin: 0;
     background-color: var(--light-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
   }
 
   /* Header/Navigation */
@@ -127,7 +128,7 @@
   padding: 0 1rem;
 }
 .welcome-title h1{
-  font-size: var(--font-responsive-xl);
+  font-size: var(--font-responsive-xxl);
 }
 
 .welcome-title h2 {
@@ -138,6 +139,7 @@
 .welcome-text p {
   font-size: var(--font-responsive-sm);
   margin: 0;
+  padding: 1rem 0;
 }
 
 .welcome-text {
@@ -192,7 +194,6 @@
   }
 
 }
-
 
 /* Reviews Section */
 .reviews-section {
@@ -361,9 +362,16 @@
   padding-bottom: 1rem;
 }
 
+.modal-header h1 {
+  font-size: var(--font-responsive-lg);
+}
+
+.modal-list li, ol li {
+  font-size: var(--font-responsive-sm);
+}
+
 /* Contact Us Page */
 .title-container {
-  color: var(--dark-color);
   max-width: 600px;
 }
 
@@ -372,10 +380,10 @@
 }
 
 .title-container p {
-  font-size: var(--font-responsive-md);
+  font-size: var(--font-responsive-sm);
 }
 .title-container img {
-  width: 200px;
+  width: 150px;
 }
 
 .contact-form-section {
@@ -393,6 +401,10 @@
 .contact-brands i:hover {
   color: var(--green-color);
   transform: scale(1.1);
+}
+
+.form {
+  color: var(--dark-color);
 }
 
 .form-label {
@@ -434,12 +446,13 @@
 }
 
 .faq-text p {
-  font-size: var(--font-responsive-md);
+  font-size: var(--font-responsive-sm);
 }
 
 .accordion-body {
   background-color: var(--green-color);
   color: var(--light-color);
+  font-size: var(--font-responsive-sm);
 }
 
 
