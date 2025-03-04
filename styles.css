@@ -139,7 +139,7 @@
 .welcome-text p {
   font-size: var(--font-responsive-sm);
   margin: 0;
-  padding: 1rem 0;
+  padding: .5rem 0;
 }
 
 .welcome-text {
