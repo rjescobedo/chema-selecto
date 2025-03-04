@@ -7,7 +7,7 @@ carouselInner.innerHTML = '';
 carouselImages.forEach((image, index) => {
     carouselInner.innerHTML += `
         <div class="carousel-item ${index === 0 ? 'active' : ''}">
-            <img src="${image.img}" class="d-block w-100" alt="${image.alt}">
+            <img src="${image.img}" class="d-block w-100" alt="${image.alt}" loading="lazy">
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <h5>${image.title}</h5>
                 <p>${image.description}</p>

@@ -1,23 +1,23 @@
 export const carouselImages = [
     {
         img: '/img/gallery-1.avif',
-        alt: 'Image of food',
-        title: 'First Slide Label',
-        description: 'Some representative placeholder content for the first slide.'
+        alt: 'A delicious plated dish with fresh ingredients',
+        title: 'Savor the Flavor',
+        description: 'Experience mouthwatering dishes made with the freshest ingredients, crafted to perfection.'
     },
     {
         img: '/img/gallery-2.avif',
-        alt: 'Image of food',
-        title: 'Second Slide Label',
-        description: 'Some representative placeholder content for the second slide.'
+        alt: 'A beautifully presented meal with vibrant colors',
+        title: 'A Feast for the Senses',
+        description: 'Indulge in a culinary journey where every bite bursts with rich flavors and textures.'
     },
     {
         img: '/img/gallery-3.avif',
-        alt: 'Image of food',
-        title: 'Third Slide Label',
-        description: 'Some representative placeholder content for the third slide.'
+        alt: 'A gourmet dish garnished with fresh herbs',
+        title: 'Where Taste Meets Art',
+        description: 'Delight in expertly prepared meals that are as visually stunning as they are delicious.'
     },
-]
+];
 
 export const reviews = [
     {

@@ -14,10 +14,13 @@
     --font-secondary: 'Georgia', serif;
   
     /* Responsive Font Sizes */
+    --font-responsive-xs: clamp(12px, 1.5vw, 14px);
     --font-responsive-sm: clamp(14px, 2vw, 16px);
     --font-responsive-md: clamp(16px, 3vw, 20px);
     --font-responsive-lg: clamp(20px, 4vw, 24px);
     --font-responsive-xl: clamp(24px, 5vw, 32px);
+    --font-responsive-xxl: clamp(32px, 6vw, 40px);
+    --font-responsive-xxxl: clamp(40px, 8vw, 48px);
   
     /* Spacing */
     --spacing-small: 8px;
@@ -79,6 +82,7 @@
 /* Hero/Carousel Section */
 .carousel-container {
   margin: 0 auto; /* Centers the carousel */
+  background-color: var(--red-color);
 }
 
 .carousel-inner img {
@@ -86,6 +90,7 @@
   object-fit: cover; /* Ensures images fit nicely */
   filter: brightness(50%); /* Adjust this value for a lighter or darker effect */
   object-fit: cover; /* Optional: ensures the image fills the container without distortion */
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .carousel-item {
@@ -96,6 +101,14 @@
   top: 50%;
   transform: translateY(-50%);
   bottom: auto; /* Override Bootstrap's default bottom positioning */
+}
+
+.carousel-caption h5 {
+  font-size: var(--font-responsive-xxl);
+}
+
+.carousel-caption p {
+  font-size: var(--font-responsive-md);
 }
 
 /* Welcome Section */
