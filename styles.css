@@ -87,7 +87,7 @@
 }
 
 .carousel-inner img {
-  max-height: 500px; /* Controls image height */
+  height: 50vh; /* Controls image height */
   object-fit: cover; /* Ensures images fit nicely */
   filter: brightness(50%); /* Adjust this value for a lighter or darker effect */
   object-fit: cover; /* Optional: ensures the image fills the container without distortion */
