@@ -1,22 +1,35 @@
 export const carouselImages = [
     {
-        img: '/img/gallery-1.avif',
-        alt: 'A delicious plated dish with fresh ingredients',
-        title: 'Savor the Flavor',
-        description: 'Experience mouthwatering dishes made with the freshest ingredients, crafted to perfection.'
+        "img": "/img/chicharrones.avif",
+        "alt": "A crispy and flavorful plate of golden-brown chicharrones",
+        "title": "Crispy Perfection in Every Bite",
+        "description": "Savor the irresistible crunch and bold flavors of our handcrafted chicharrones, made with tradition and quality ingredients."
     },
     {
-        img: '/img/gallery-2.avif',
-        alt: 'A beautifully presented meal with vibrant colors',
-        title: 'A Feast for the Senses',
-        description: 'Indulge in a culinary journey where every bite bursts with rich flavors and textures.'
+        img: '/img/tamale.avif',
+        alt: 'A delicious dish of homemade tamales',
+        title: 'Authentic Tradition in Every Bite',
+        description: 'Indulge in the rich flavors of handmade tamales, crafted with care and steeped in tradition.'
     },
     {
-        img: '/img/gallery-3.avif',
-        alt: 'A gourmet dish garnished with fresh herbs',
-        title: 'Where Taste Meets Art',
-        description: 'Delight in expertly prepared meals that are as visually stunning as they are delicious.'
+        img: '/img/tacos.avif',
+        alt: 'Tacos on a plate with meat',
+        title: 'A Taste of Tradition',
+        description: 'Savor the bold, authentic flavors of handmade tacos, crafted with fresh ingredients and a passion for perfection.'
     },
+    {
+        "img": "/img/tacos-fire.avif",
+        "alt": "Tacos sizzling with fresh ingredients and bold flavors",
+        "title": "Flame-Grilled Goodness",
+        "description": "Enjoy the smoky, bold flavors of perfectly grilled tacos, crafted with fresh ingredients and authentic seasoning."
+    },
+    {
+        img: '/img/tacos-lime.avif',
+        alt: 'Tacos with meat, cilantro, onions, and lime on the side',
+        title: 'Fresh, Zesty, and Flavorful',
+        description: 'Enjoy the perfect balance of juicy meat, fresh cilantro, crisp onions, and a splash of lime for an unforgettable taco experience.'
+    },
+
 ];
 
 export const reviews = [

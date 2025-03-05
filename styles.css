@@ -89,8 +89,8 @@
 .carousel-inner img {
   height: 50vh; /* Controls image height */
   object-fit: cover; /* Ensures images fit nicely */
+  object-position: center;
   filter: brightness(50%); /* Adjust this value for a lighter or darker effect */
-  object-fit: cover; /* Optional: ensures the image fills the container without distortion */
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
