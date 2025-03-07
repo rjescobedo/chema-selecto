@@ -2,8 +2,8 @@
 
 :root {
     /* Primary Colors */
-    --red-color: #db152f; /* Adjust based on your design */
-    --green-color: #198754;
+    --red-color: #ee3e41; /* Adjust based on your design */
+    --green-color: #008854;
   
     /* Neutral Colors */
     --light-color: #f8f9fa;
@@ -45,6 +45,19 @@
     transition: background-color 0.5s ease, color 0.5s ease;
   }
 
+  /* Buttons/Links */
+  .btn-danger {
+    background-color: var(--red-color);
+  }
+
+  .btn-success {
+    background-color: var(--green-color);
+  }
+
+  .link-success {
+    color: var(--green-color);
+  }
+
   /* Header/Navigation */
   .navbar-toggler {
     border: none !important; /* Remove the outline */
@@ -56,7 +69,9 @@
   }
 
   .navbar-brand img {
-    width: 70px;
+    width: 90px;
+    padding: 0;
+    margin: 0;
   }
 
   .active {
@@ -66,6 +81,7 @@
   .social-link i {
     font-size: 2rem;
     color: var(--green-color);
+    padding-top: .5rem;
   }
 
   .d-block .row .col-6 img {
@@ -80,15 +96,15 @@
   box-shadow: none;
   color: var(--dark-color);
   transition: color .3s ease-in-out;
-  padding: 0 .5rem .5rem .5rem;
+  padding: 3px 10px;
 }
 
 #dark-mode-toggle:hover {
   color: var(--red-color);
 }
 
-.bi {
-  font-size: var(--font-responsive-lg);
+.bi-sun, .bi-moon {
+  font-size: var(--font-responsive-md);
 }
 
 
@@ -100,7 +116,7 @@
 }
 
 .carousel-inner img {
-  height: 50vh; /* Controls image height */
+  max-height: 90vh; /* Controls image height */
   object-fit: cover; /* Ensures images fit nicely */
   object-position: center;
   filter: brightness(50%); /* Adjust this value for a lighter or darker effect */
@@ -156,7 +172,7 @@
 }
 
 .welcome-text {
-  max-width: 700px;
+  max-width: 750px;
   margin: 1rem auto;
   text-align: center;
 }
@@ -384,6 +400,10 @@
 }
 
 /* Contact Us Page */
+.contact-container {
+  margin-top: 2rem;
+}
+
 .title-container {
   max-width: 600px;
 }
@@ -396,7 +416,7 @@
   font-size: var(--font-responsive-sm);
 }
 .title-container img {
-  width: 150px;
+  width: 200px;
 }
 
 .contact-form-section {
@@ -447,6 +467,11 @@
   .title-container img {
     width: 300px;
   }
+
+  .footer-brand img {
+    width: 200px;
+  }
+  
 }
 
 /* FAQ Section */
@@ -468,5 +493,88 @@
   font-size: var(--font-responsive-sm);
 }
 
+/* About Us Page */
+/* Hero Section */
+.hero-section {
+  background-color: var(--red-color);
+}
 
+.hero-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Ensures flexibility */
+  background-image: url('/img/store.avif');
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
 
+/* Dark overlay for better contrast */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darken effect without affecting text */
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  z-index: 2; /* Above the overlay */
+  width: 80%; /* Helps keep text within bounds */
+  max-width: 900px;
+}
+
+.hero-text h1 {
+  font-size: clamp(2rem, 5vw, 4rem); /* Responsive font size */
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adds contrast */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .hero-container {
+    min-height: 80vh; /* Slightly shorter on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    min-height: 60vh; /* Reduces height on smaller screens */
+    padding: 1.5rem;
+  }
+
+  .hero-text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    min-height: 50vh; /* Adjusts height for very small screens */
+    padding: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.8rem, 5vw, 3rem); /* Further scales text */
+  }
+}
+
+/* About the Owners */
+
+.owners-image img {
+  width: 500px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  float: left;
+  margin: 0 1rem;
+}

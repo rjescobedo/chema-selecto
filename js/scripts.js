@@ -10,14 +10,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //Dark Mode
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('bg-dark', 'text-light');
-    document.body.classList.remove('bg-light', 'text-dark');
-    document.getElementById('sun-icon').style.display = 'none';
-    document.getElementById('moon-icon').style.display = 'inline';
-}
+// Apply the saved theme preference immediately upon page load
+(function() {
+    const savedTheme = localStorage.getItem('theme');
+    const body = document.body;
 
-// Add event listener to the toggle button
+    // Check if a theme is saved in localStorage
+    if (savedTheme === 'dark') {
+        body.classList.add('bg-dark', 'text-light');
+        body.classList.remove('bg-light', 'text-dark');
+        document.getElementById('sun-icon').style.display = 'none';
+        document.getElementById('moon-icon').style.display = 'inline';
+    } else {
+        body.classList.add('bg-light', 'text-dark');
+        body.classList.remove('bg-dark', 'text-light');
+        document.getElementById('sun-icon').style.display = 'inline';
+        document.getElementById('moon-icon').style.display = 'none';
+    }
+})();
+
+// Add event listener to the dark mode toggle button
 document.getElementById('dark-mode-toggle').addEventListener('click', function() {
     const body = document.body;
     const sunIcon = document.getElementById('sun-icon');
@@ -33,7 +45,7 @@ document.getElementById('dark-mode-toggle').addEventListener('click', function()
     sunIcon.style.display = sunIcon.style.display === 'none' ? 'inline' : 'none';
     moonIcon.style.display = moonIcon.style.display === 'none' ? 'inline' : 'none';
 
-    // Save the theme preference
+    // Save the theme preference immediately after toggling
     if (body.classList.contains('bg-dark')) {
         localStorage.setItem('theme', 'dark');
     } else {
