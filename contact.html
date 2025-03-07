@@ -81,17 +81,19 @@
             <div class="d-block d-lg-none mt-3">
                 <div class="row g-2">
                     <div class="row g-2">
-                        <div class="col-6">
-                            <img src="img/chicharrones.avif" alt="Gallery Image 1" class="img-fluid rounded">
-                        </div>
-                        <div class="col-6">
-                            <img src="img/tacos-lime.avif" alt="Gallery Image 2" class="img-fluid rounded">
-                        </div>
-                        <div class="col-6">
-                            <img src="img/tamale.avif" alt="Gallery Image 3" class="img-fluid rounded">
-                        </div>
-                        <div class="col-6">
-                            <img src="img/tacos.avif" alt="Gallery Image 4" class="img-fluid rounded">
+                        <div class="nav-pics row g-2">
+                            <div class="nav-pics col-6">
+                                <img src="img/chicharrones.avif" alt="Gallery Image 1" class="img-fluid rounded">
+                            </div>
+                            <div class="col-6">
+                                <img src="img/menudo.avif" alt="Gallery Image 2" class="img-fluid rounded">
+                            </div>
+                            <div class="col-6">
+                                <img src="img/pork-lard.avif" alt="Gallery Image 3" class="img-fluid rounded">
+                            </div>
+                            <div class="col-6">
+                                <img src="img/tacos.avif" alt="Gallery Image 4" class="img-fluid rounded">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -104,10 +106,10 @@
 
 <!-- Contact Form -->
 <main class="contact-container">
-    <section class="title-container col-12 d-flex row justify-content-center align-items-center m-auto text-center py-3">
-        <img src="/img/chema-logo.avif" alt="Chema Selecto Logo" class="img-fluid">
-        <h1>Get in Touch with Us</h1>
-        <p>Have questions or need a quote? Our team is here to help. Fill out the form below, and we'll get back to you as soon as possible.</p>
+    <section class="title-container col-12 d-flex row justify-content-center align-items-center m-auto text-center">
+        <img src="/img/chema-logo.avif" alt="Chema Selecto – Premium Meat Distributor Logo" class="img-fluid">
+        <h1>Contact Chema Selecto – Your Trusted Meat Supplier</h1>
+        <p>Looking for high-quality pork and beef products for your restaurant, taqueria, or meat market? Get in touch with our expert team for inquiries, bulk orders, or a custom quote. Fill out the form below, and we'll respond promptly.</p>
     </section>
 
     <div class="contact-form-section row g-0">
@@ -152,23 +154,25 @@
         <section class="form-container col-12 col-md-6 shadow mb-5">
             <form id="contact-form" class="form row g-3 p-3 needs-validation" novalidate>
                 <h2 class="text-center mt-4">Contact Us</h2>
+                
                 <div class="col-12">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Jose Altuve" required>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Maria Gonzalez" required>
                     <div class="invalid-feedback">Please enter your name.</div>
                 </div>
-
+            
                 <div class="col-md-6">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="josealtuve@email.com" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="mgonzalez@email.com" required>
                     <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
+            
                 <div class="col-md-6">
                     <label for="phone" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="281-123-4567" required>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="(713) 928-2294" required>
                     <div class="invalid-feedback">Please enter a valid phone number.</div>
                 </div>
-
+            
                 <div class="col-12">
                     <label for="reason" class="form-label">Reason for Contact</label>
                     <select class="form-select" id="reason" name="reason" required>
@@ -182,23 +186,28 @@
                     </select>
                     <div class="invalid-feedback">Please select a reason for contact.</div>
                 </div>
-
+            
                 <div class="col-12">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message here..." required></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="4" 
+                        placeholder="Tell us how we can help! Include details about your request, such as product specifications, order size, or any special requirements."
+                        required></textarea>
                     <div class="invalid-feedback">Please enter your message.</div>
                 </div>
-
+            
                 <div class="col-12">
                     <button type="submit" class="btn btn-success w-100">Submit</button>
                 </div>
             </form>
         </section>
 
-        <section class="faq-container col-12 mb-5">
+        <section class="faq-container col-12 my-5">
             <div class="faq-text m-auto">
-                <h2 class="text-center mb-4">Helpful FAQ's</h2>
-                <p class="text-center">Find answers to common questions about our services, ordering process, and support. If you need more assistance, feel free to <a href="#contact-form" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">contact us</a>.</p>
+                <h2 class="text-center mb-4">Frequently Asked Questions (FAQs) – Chema Selecto</h2>
+                <p class="text-center">
+                    Get answers to common questions about our premium pork and beef products, bulk ordering, shipping, and customer support.  
+                    Need further assistance? <a href="#contact-form" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Contact us today</a>.
+                </p>
             </div>
         
             <div class="accordion shadow" id="faq-accordion">
@@ -300,7 +309,7 @@
     <div class="container text-center py-4">
         <div class="row">
             <!-- Brand Logo -->
-            <div class="footer-brand col-12 mb-3">
+            <div class="footer-brand col-12">
                 <a href="index.html">
                     <img src="img/chema-logo-white.avif" alt="White Chema Logo">
                 </a>

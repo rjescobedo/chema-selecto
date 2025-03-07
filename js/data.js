@@ -2,32 +2,32 @@ export const carouselImages = [
     {
         img: "/img/chicharrones.avif",
         alt: "Crispy, golden-brown chicharrones with a rich, savory crunch",
-        title: "Authentic Chicharrones – Crispy & Flavorful",
-        description: "Enjoy the bold, savory crunch of our handcrafted chicharrones, made using traditional Mexican recipes and premium ingredients."
+        title: "Traditional Chicharrones – Crunchy & Flavorful"
     },
     {
-        img: "/img/tamale.avif",
-        alt: "Handmade tamales wrapped in corn husks, filled with rich, seasoned meat",
-        title: "Handcrafted Tamales – A Taste of Mexico",
-        description: "Savor the authentic taste of handmade tamales, filled with perfectly seasoned meat and wrapped in corn husks for a true Mexican culinary experience."
+        img: "/img/pork-strips.avif",
+        alt: "Pork Strips - a celicious addition to dishes",
+        title: "Pork Strips - A delicious addition to various dishes"
+    },
+    {
+        img: "/img/pork-lard.avif",
+        alt: "Pork Lard - Essential for authentic cooking",
+        title: "Pork Lard - Essential for authentic cooking"
     },
     {
         img: "/img/tacos.avif",
         alt: "Mexican street-style tacos loaded with seasoned meat, fresh cilantro, and onions",
-        title: "Authentic Mexican Street Tacos",
-        description: "Experience the rich flavors of Mexican street tacos, featuring perfectly seasoned meat, fresh cilantro, and onions in warm, soft tortillas."
+        title: "Best Mexican Street Tacos – Fresh & Authentic"
+    },
+    {
+        img: "/img/menudo.avif",
+        alt: "Menudo Cuts (Beef Tripe & Honeycomb) – High-quality for authentic menudo",
+        title: "Menudo Cuts (Beef Tripe & Honeycomb) – High-quality for authentic menudo"
     },
     {
         img: "/img/tacos-fire.avif",
         alt: "Sizzling tacos grilled over an open flame, bursting with smoky flavors",
-        title: "Flame-Grilled Tacos – Bold & Smoky",
-        description: "Enjoy the irresistible taste of flame-grilled tacos, infused with smoky flavors and authentic Mexican spices, cooked to perfection."
-    },
-    {
-        img: "/img/tacos-lime.avif",
-        alt: "Tacos with juicy meat, fresh cilantro, crisp onions, and lime wedges",
-        title: "Zesty Tacos with Fresh Lime",
-        description: "Elevate your taco experience with juicy, seasoned meat, fresh cilantro, crisp onions, and a refreshing squeeze of lime for the perfect balance of flavors."
+        title: "Flame-Grilled Mexican Tacos – Bold & Smoky"
     },
 ];
 
