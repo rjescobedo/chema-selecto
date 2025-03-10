@@ -602,7 +602,6 @@
 
 .about-container strong {
   color: var(--red-color);
-  font-size: var(--font-responsive-md);
 }
 
 .about-image {
