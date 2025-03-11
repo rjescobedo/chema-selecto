@@ -84,9 +84,9 @@
     margin: 0;
   }
 
-  .bg-body-tertiary {
-    padding: 0px;
-  }
+.offcanvas-body {
+  padding-top: 0;
+}
 
   .active {
     font-weight: bold;
@@ -131,7 +131,7 @@
 
 .carousel-item img {
   width: 100%;
-  height: 400px;
+  height: 50vh;
   object-fit: cover; /* Ensures images fit nicely */
   object-position: center;
   filter: brightness(50%); /* Adjust this value for a lighter or darker effect */
@@ -175,6 +175,7 @@
 .welcome-container {
   padding: 0 1rem;
 }
+
 .welcome-title h1{
   font-size: var(--font-responsive-xxl);
 }
@@ -423,10 +424,6 @@
 }
 
 /* Contact Us Page */
-.contact-container {
-  margin-top: 2rem;
-}
-
 .title-container {
   max-width: 900px;
   padding: 0;
@@ -577,7 +574,7 @@
 
 @media (max-width: 768px) {
   .hero-container {
-    min-height: 60vh; /* Reduces height on smaller screens */
+    min-height: 50vh; /* Reduces height on smaller screens */
     padding: 1.5rem;
     background-position: right;
   }
@@ -596,10 +593,6 @@
 }
 
 /* About the Owners/Company */
-.about-sections {
-  margin: 4rem 0;
-}
-
 .about-container strong {
   color: var(--red-color);
 }
