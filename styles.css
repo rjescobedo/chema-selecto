@@ -74,6 +74,10 @@
     box-shadow: none !important; /* Ensure no focus outline */
   }
 
+  .nav-link {
+    font-size: var(--font-responsive-sm);
+  }
+
   .nav-link:hover {
     color: var(--red-color);
 }
@@ -94,6 +98,27 @@
 
   .active {
     font-weight: bold;
+  }
+
+  .above-nav {
+    background-color: var(--red-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .above-nav a {
+    font-size: var(--font-responsive-xs);
+  }
+
+  .contact-nav a {
+    font-size: var(--font-responsive-sm);
+  }
+
+  .contact-nav a:first-child {
+    margin-bottom: .5rem;
   }
 
   .social-link i {
@@ -125,11 +150,11 @@
   font-size: var(--font-responsive-md);
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .bg-body-tertiary {
     padding: .5rem;
   }
-}
+} */
 
 /* Hero/Carousel Section */
 .carousel-container {
