@@ -150,11 +150,10 @@
   font-size: var(--font-responsive-md);
 }
 
-/* @media (min-width: 992px) {
-  .bg-body-tertiary {
-    padding: .5rem;
-  }
-} */
+.offcanvas.offcanvas-start {
+  width: 75vw; /* Default for small screens */
+}
+
 
 /* Hero/Carousel Section */
 .carousel-container {
