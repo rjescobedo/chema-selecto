@@ -154,6 +154,12 @@
   width: 80vw; /* Default for small screens */
 }
 
+@media (min-width: 768px) {
+  .offcanvas.offcanvas-start {
+    width: 60vw; /* Default for small screens */
+  }
+}
+
 
 /* Hero/Carousel Section */
 .carousel-container {
