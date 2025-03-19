@@ -507,7 +507,7 @@
 }
 
 .title-container p {
-  font-size: var(--font-responsive-md);
+  font-size: var(--font-responsive-sm);
 }
 .title-container img {
   width: 200px;
