@@ -2,11 +2,11 @@
 
 :root {
     /* Primary Colors */
-    --red-color: #ee3e41; /* Adjust based on your design */
+    --red-color: rgb(238, 62, 65); /* Adjust based on your design */
     --green-color: #008854;
   
     /* Neutral Colors */
-    --light-color: #f8f9fa;
+    --light-color: rgb(248, 249, 250);
     --dark-color: #212529;
   
     /* Font Settings */
@@ -44,14 +44,33 @@
     background-color: var(--light-color);
     transition: background-color 0.5s ease, color 0.5s ease;
   }
+  
+  h1 {
+    font-family: "Pacifico", cursive;
+  }
+
+  p, li, a, button, h2 ,h3, h4, h5 {
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
 
   /* Buttons/Links/Misc. */
   .btn-danger {
     background-color: var(--red-color);
+    transition: all .3s ease-in-out;
+  }
+
+  .btn-danger:hover {
+    transform: scale(1.05);
   }
 
   .btn-success {
     background-color: var(--green-color);
+    transition: all .3s ease-in-out;
+  }
+
+  .btn-success:hover{
+    transform: scale(1.05);
   }
 
   .link-success {
@@ -186,7 +205,7 @@
   bottom: auto; /* Override Bootstrap's default bottom positioning */
 }
 
-.carousel-caption h5 {
+.carousel-caption h2 {
   font-size: var(--font-responsive-xl);
 }
 
@@ -199,8 +218,8 @@
     height: 95vh;
   }
 
-  .carousel-caption h5 {
-    font-size: var(--font-responsive-xxxl);
+  .carousel-caption h3 {
+    font-size: var(--font-responsive-xxl);
   }
   
   .carousel-caption p {
@@ -215,10 +234,10 @@
 }
 
 .welcome-title h1{
-  font-size: var(--font-responsive-xxl);
+  font-size: var(--font-responsive-xxxl);
 }
 
-.welcome-title h2 {
+.welcome-title h3 {
   font-size: var(--font-responsive-md);
   color: var(--red-color);
 }
@@ -386,10 +405,12 @@
 
 .footer-quicklinks-container h5 {
   font-size: var(--font-responsive-md);
+  font-weight: 600;
 }
 
 .footer-contact-container h5 {
   font-size: var(--font-responsive-md);
+  font-weight: 600;
 }
 
 .footer-link {
@@ -410,6 +431,7 @@
 
 .footer-socials-container h5 {
   font-size: var(--font-responsive-md);
+  font-weight: 600;
 }
 
 .footer-social-link i {
@@ -464,15 +486,26 @@
 /* Contact Us Page */
 .title-container {
   max-width: 900px;
-  padding: 0;
+  padding: 1rem;
 }
 
 .title-container h1{
-  font-size: var(--font-responsive-xl);
+  font-size: var(--font-responsive-xxxl);
+}
+
+.title-container h2 {
+  display: inline-block;
+  font-size: var(--font-responsive-lg);
+  font-weight: 600;
+  background-color: var(--red-color);
+  border-radius: var(--border-radius);
+  padding: .5rem 0;
+  margin-bottom: 2rem;
+  max-width: 350px;
 }
 
 .title-container p {
-  font-size: var(--font-responsive-sm);
+  font-size: var(--font-responsive-md);
 }
 .title-container img {
   width: 200px;
@@ -499,6 +532,10 @@
   color: var(--dark-color);
 }
 
+.form h2 {
+  font-size: var(--font-responsive-lg);
+}
+
 .form-label {
   font-weight: bold;
 }
@@ -512,6 +549,10 @@
   background-color: var(--red-color);
   color: var(--light-color);
   border-radius: var(--border-radius);
+}
+
+.contact-social-container h2 {
+  font-size: var(--font-responsive-lg);
 }
 
 @media (min-width: 768px) {
@@ -540,6 +581,7 @@
 }
 .faq-text h2 {
   font-size: var(--font-responsive-xl);
+  font-family: "Pacifico", cursive;
 }
 
 .faq-text p {
@@ -593,8 +635,9 @@
   max-width: 700px;
 }
 
-.hero-text h5 {
-  font-size: var(--font-responsive-xxl); /* Responsive font size */
+.hero-text h2 {
+  font-size: var(--font-responsive-xxxl); /* Responsive font size */
+  font-weight: 600;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adds contrast */
 }
 .hero-text p {
@@ -659,6 +702,8 @@
 
 .about-container h2 {
   font-size: var(--font-responsive-xxl);
+  line-height: 3rem;
+  font-family: "Pacifico", cursive;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -686,3 +731,95 @@
   }
 
 }
+
+/* Our Products Page */
+.products-hero-container {
+  position: relative;
+  width: 100%;
+  min-height: 95vh; /* Ensures flexibility */
+  background-image: url('/img/manufacturing.avif');
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.products-tabs h1{
+  text-align: center;
+  font-size: var(--font-responsive-xxxl);
+  margin-bottom: 2rem;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid rgba(238, 62, 65, 0.4);
+}
+
+.nav-tabs .nav-link {
+  color: var(--red-color);
+  border: 1px solid rgba(238, 62, 65, 0.3);
+  border-bottom: none;
+  background-color: transparent;
+  font-size: var(--font-responsive-xs);
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--light-color);
+  background-color: var(--red-color);
+  border: 1px solid var(--red-color);
+  border-bottom: 1px solid var(--red-color);
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: rgba(238, 62, 65, 0.9);
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures all cards are the same height */
+  transition: box-shadow .3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 16px rgba(238, 62, 65, 0.7);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Adjust as needed */
+  object-fit: cover; /* Ensures uniformity */
+}
+
+.card-body {
+  flex-grow: 1; /* Makes sure text area expands evenly */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: var(--font-responsive-md);
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: var(--font-responsive-sm);
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .nav-tabs .nav-link {
+    font-size: var(--font-responsive-sm);
+  }
+}
+
+
+
+
