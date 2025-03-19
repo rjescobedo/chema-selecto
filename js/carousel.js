@@ -24,7 +24,7 @@ Promise.all(preloadImages)
                 <div class="carousel-item ${index === 0 ? 'active' : ''}">
                     <img src="${image.img}" class="d-block w-100" alt="${image.alt}" loading="lazy">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h3>${image.title}</h3>
+                        <h2>${image.title}</h2>
                         <a href="/contact.html" class="btn btn-danger">Contact Us</a>
                     </div>
                 </div>

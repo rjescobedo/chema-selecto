@@ -206,7 +206,8 @@
 }
 
 .carousel-caption h2 {
-  font-size: var(--font-responsive-xl);
+  font-size: var(--font-responsive-xxl);
+  font-weight: 600;
 }
 
 .carousel-caption a {
