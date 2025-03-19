@@ -499,6 +499,7 @@
   font-size: var(--font-responsive-lg);
   font-weight: 600;
   background-color: var(--red-color);
+  color: var(--light-color);
   border-radius: var(--border-radius);
   padding: .5rem 0;
   margin-bottom: 2rem;
