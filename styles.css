@@ -740,7 +740,7 @@
   background-image: url('/img/manufacturing.avif');
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   background-size: cover;
-  background-position: top;
+  background-position: center top;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -765,7 +765,7 @@
   border: 1px solid rgba(238, 62, 65, 0.3);
   border-bottom: none;
   background-color: transparent;
-  font-size: var(--font-responsive-xs);
+  font-size: var(--font-responsive-sm);
 }
 
 .nav-tabs .nav-link.active {
@@ -812,6 +812,31 @@
 .card-text {
   font-size: var(--font-responsive-sm);
   font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .products-hero-container {
+    min-height: 80vh; /* Slightly shorter on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .products-hero-container {
+    min-height: 50vh; /* Reduces height on smaller screens */
+    padding: 1.5rem;
+  }
+
+  .hero-text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-hero-container {
+    min-height: 50vh; /* Adjusts height for very small screens */
+    padding: 1rem;
+  }
+
 }
 
 @media (min-width: 768px) {
