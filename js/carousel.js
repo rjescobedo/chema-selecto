@@ -22,7 +22,8 @@ Promise.all(preloadImages)
         carouselImages.forEach((image, index) => {
             carouselItemsHTML += `
                 <div class="carousel-item ${index === 0 ? 'active' : ''}">
-                    <img src="${image.img}" class="d-block w-100" alt="${image.alt}" loading="lazy">
+                    <img src="${image.img}" class="d-block w-100" alt="${image.alt}" 
+                        ${index === 0 ? 'decoding="async"' : 'loading="lazy"'}> 
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <h2>${image.title}</h2>
                         <a href="/contact.html" class="btn btn-danger">Contact Us</a>
