@@ -103,6 +103,7 @@
 
   .navbar-brand img {
     width: 90px;
+    height: 50px;
     padding: 0;
     margin: 0;
   }
@@ -401,6 +402,7 @@
 
 .footer-brand img {
   width: 150px;
+  height: 200px;
 }
 
 .footer-quicklinks-container h5 {
