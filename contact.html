@@ -226,8 +226,11 @@
 
         <!-- Contact Form Section -->
         <section class="form-container col-12 col-md-6 shadow mb-5">
-            <form id="contact-form" class="form row g-3 p-3 needs-validation" novalidate>
+            <form id="contact-form" class="form row g-3 p-3 needs-validation" method="POST" netlify netlify-honeypot="bot-field" novalidate>
                 <h2 class="text-center mt-4">Contact Us</h2>
+
+                <!-- Hidden honeypot field for spam prevention -->
+                <input type="hidden" name="bot-field">
                 
                 <div class="col-12">
                     <label for="name" class="form-label">Name</label>
