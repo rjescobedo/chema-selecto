@@ -831,21 +831,25 @@
   border-bottom: none;
   background-color: transparent;
   font-size: var(--font-responsive-sm);
+  transition: all 0.3s ease-in-out;
 }
 
+/* Active tab */
 .nav-tabs .nav-link.active {
-  color: var(--light-color);
-  background-color: var(--red-color);
+  color: var(--light-color) !important;
+  background-color: var(--red-color) !important;
   border: 1px solid var(--red-color);
   border-bottom: 1px solid var(--red-color);
 }
 
-.nav-tabs .nav-link:hover {
-  background-color: rgba(238, 62, 65, 0.5);
-  border: 1px solid rgba(238, 62, 65, 0.5);
-  color: white;
+/* Hover (desktop only) */
+@media (hover: hover) {
+  .nav-tabs .nav-link:hover {
+    background-color: rgba(238, 62, 65, 0.5);
+    border: 1px solid rgba(238, 62, 65, 0.5);
+    color: white;
+  }
 }
-
 .card {
   display: flex;
   flex-direction: column;
