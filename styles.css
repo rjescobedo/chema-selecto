@@ -823,12 +823,12 @@
 }
 
 .nav-tabs .nav-link {
-  color: var(--light-color);
+  color: var(--red-color);
   border: 1px solid rgba(238, 62, 65, 0.3);
   border-bottom: none;
   background-color: transparent;
   font-size: var(--font-responsive-sm);
-  transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
 .nav-tabs .nav-link.active {
