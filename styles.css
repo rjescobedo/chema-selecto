@@ -728,7 +728,7 @@
 
 @media (max-width: 480px) {
   .hero-container {
-    min-height: 50vh; /* Adjusts height for very small screens */
+    min-height: 70vh; /* Adjusts height for very small screens */
     padding: 1rem;
   }
 
@@ -913,7 +913,7 @@
 
 @media (max-width: 480px) {
   .products-hero-container {
-    min-height: 50vh; /* Adjusts height for very small screens */
+    min-height: 70vh; /* Adjusts height for very small screens */
     padding: 1rem;
   }
 
