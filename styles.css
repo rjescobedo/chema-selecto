@@ -155,7 +155,7 @@
   }
 
   .above-nav a {
-    font-size: var(--font-responsive-xs);
+    font-size: var(--font-responsive-sm);
   }
 
   .contact-nav a {
@@ -561,6 +561,7 @@
 .title-container h2 {
   display: inline-block;
   font-size: var(--font-responsive-lg);
+  color: var(--red-color);
   margin-bottom: 2rem;
   max-width: 330px;
 }
