@@ -718,7 +718,7 @@
   .hero-container {
     min-height: 70vh; /* Reduces height on smaller screens */
     padding: 1.5rem;
-    background-position: right;
+    background-position: center;
   }
 
   .hero-text {
@@ -730,6 +730,8 @@
   .hero-container {
     min-height: 70vh; /* Adjusts height for very small screens */
     padding: 1rem;
+    background-position: center;
+
   }
 
 }
