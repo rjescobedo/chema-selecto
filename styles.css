@@ -124,6 +124,11 @@
     color: var(--red-color);
 }
 
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: var(--red-color);
+  }
+
 
   .navbar-brand img {
     width: 100px;
@@ -139,11 +144,6 @@
 .bg-body-tertiary {
   padding: 0;
 }
-
-  .active {
-    font-weight: bold;
-    color: var(--red-color) !important;
-  }
 
   .above-nav {
     background-color: var(--red-color);
@@ -252,7 +252,7 @@
 
 .carousel-item img {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   object-fit: cover; /* Ensures images fit nicely */
   object-position: center;
   filter: brightness(50%); /* Adjust this value for a lighter or darker effect */
@@ -279,7 +279,7 @@
 
 @media (min-width: 768px) {
   .carousel-item img {
-    height: 95vh;
+    height: 100vh;
   }
 
   .carousel-caption h3 {
@@ -666,7 +666,7 @@
 .hero-container {
   position: relative;
   width: 100%;
-  min-height: 95vh; /* Ensures flexibility */
+  min-height: 100vh; /* Ensures flexibility */
   background-image: url('/img/store-sign.avif');
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   background-size: cover;
@@ -716,7 +716,7 @@
 
 @media (max-width: 768px) {
   .hero-container {
-    min-height: 50vh; /* Reduces height on smaller screens */
+    min-height: 70vh; /* Reduces height on smaller screens */
     padding: 1.5rem;
     background-position: right;
   }
@@ -798,7 +798,7 @@
 .products-hero-container {
   position: relative;
   width: 100%;
-  min-height: 95vh; /* Ensures flexibility */
+  min-height: 100vh; /* Ensures flexibility */
   background-image: url('/img/manufacturing.avif');
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   background-size: cover;
@@ -823,11 +823,12 @@
 }
 
 .nav-tabs .nav-link {
-  color: var(--red-color);
+  color: var(--light-color);
   border: 1px solid rgba(238, 62, 65, 0.3);
   border-bottom: none;
   background-color: transparent;
   font-size: var(--font-responsive-sm);
+  transition: background-color .3s ease-in-out;
 }
 
 .nav-tabs .nav-link.active {
@@ -838,7 +839,8 @@
 }
 
 .nav-tabs .nav-link:hover {
-  background-color: rgba(238, 62, 65, 0.9);
+  background-color: rgba(238, 62, 65, 0.5);
+  border: 1px solid rgba(238, 62, 65, 0.5);
   color: white;
 }
 
@@ -900,7 +902,7 @@
 
 @media (max-width: 768px) {
   .products-hero-container {
-    min-height: 50vh; /* Reduces height on smaller screens */
+    min-height: 70vh; /* Reduces height on smaller screens */
     padding: 1.5rem;
   }
 
