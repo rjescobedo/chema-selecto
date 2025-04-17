@@ -342,7 +342,7 @@
   height: 300px;
   background-color: var(--green-color);
   position: relative; /* Enables absolute positioning for children */
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-intense);
 }
 
 .box img {
