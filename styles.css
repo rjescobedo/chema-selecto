@@ -278,8 +278,12 @@
   bottom: auto; /* Override Bootstrap's default bottom positioning */
 }
 
-.carousel-caption h2 {
-  font-size: var(--font-responsive-xl);
+.carousel-caption h1 {
+  font-size: var(--font-responsive-xxl);
+}
+
+.carousel-caption p {
+  font-size: var(--font-responsive-md);
 }
 
 .carousel-caption a {
@@ -291,12 +295,8 @@
     height: 100vh;
   }
 
-  .carousel-caption h3 {
-    font-size: var(--font-responsive-xxl);
-  }
-  
-  .carousel-caption p {
-    font-size: var(--font-responsive-md);
+  .carousel-caption h1 {
+    font-size: var(--font-responsive-xxxl);
   }
   
 }
@@ -387,8 +387,34 @@
 }
 
 @media (min-width: 992px) {
+  .box {
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .box img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .img1 {
+    top: -20px;
+    left: -80px;
+  }
+  
+  .img2 {
+    top: 70px;
+    right: -90px;
+  }
+  
+  .img3 {
+    bottom: -30px;
+    left: -50px;
+  }
+
   .welcome-title img {
-    width: 600px;
+    width: 500px;
   }
 }
 
@@ -695,7 +721,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh; /* Ensures flexibility */
-  background-image: url('/img/store-sign.avif');
+  background-image: url('/img/store.avif');
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   background-size: cover;
   background-position: center;
@@ -829,7 +855,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh; /* Ensures flexibility */
-  background-image: url('/img/manufacturing.avif');
+  background-image: url('/img/chema-portfolio.avif');
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   background-size: cover;
   background-position: center top;
@@ -880,25 +906,35 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: 100%; /* Ensures all cards are the same height */
-  transition: box-shadow .3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 0.5rem;
 }
 
 .card:hover {
   box-shadow: 0px 8px 16px rgba(238, 62, 65, 0.7);
 }
 
+.card-img-container {
+  width: 100%;
+  height: 250px; /* Adjust this based on your desired image height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card-img-top {
   width: 100%;
-  height: 200px; /* Adjust as needed */
-  object-fit: cover; /* Ensures uniformity */
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-body {
-  flex-grow: 1; /* Makes sure text area expands evenly */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1rem;
 }
 
 .card-title {
